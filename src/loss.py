@@ -14,6 +14,7 @@ class Loss(nn.Module):
         self.top_k = args.top_k
         self.margin = args.margin
         self.margin_loss = nn.MarginRankingLoss(margin=args.margin)
+        self.quantiles = [0.05, 0.1, 0.2, 0.25, 0.3, 0.5, 0.7, 0.75, 0.9, 0.95]
 
     
     def forward(self, pred, ground_truth, sample_num):
@@ -25,9 +26,20 @@ class Loss(nn.Module):
             return self.total_ranking_loss(pred, ground_truth)
         elif self.args.loss == "logcos":
             return self.logcos_loss(pred, ground_truth)
+        elif self.args.loss == "quantile":
+            return self.quantile_loss(pred, ground_truth)
         # return self.sample_ranking_loss(pred, ground_truth, sample_num) + self.mse_loss(pred, ground_truth) + self.corr_pe2_loss(pred, ground_truth)
         # return self.total_ranking_loss(pred, ground_truth, sample_num)
     
+    def quantile_loss(self, pred, ground_truth):
+        losses = []
+        for i, q in enumerate(self.quantiles):
+            errors = ground_truth - pred[:, i]
+            losses.append(torch.max((q - 1) * errors, q * errors).unsqueeze(-1))
+        losses = torch.cat(losses, dim=2).mean()
+
+        return losses
+
     def mse_loss(self, pred, ground_truth):
         return F.mse_loss(pred.float(), ground_truth.float(), reduction="mean")
     
