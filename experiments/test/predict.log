@@ -1,0 +1,2664 @@
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: MRR
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/MSE_BERT_IC
+seed: 822
+============================================
+Loading existing model from experiments/MSE_BERT_IC
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: MRR
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/MSE_BERT_MR
+seed: 822
+============================================
+Loading existing model from experiments/MSE_BERT_MR
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: MRR
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/MSE_BERT_MRR
+seed: 822
+============================================
+Loading existing model from experiments/MSE_BERT_MRR
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: MRR
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/MSE_SIN_IC
+seed: 822
+============================================
+Loading existing model from experiments/MSE_SIN_IC
+Total number of parameters: 6302445
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: MRR
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/MSE_SIN_MR
+seed: 822
+============================================
+Loading existing model from experiments/MSE_SIN_MR
+Total number of parameters: 6302445
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: MRR
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 1
+valid_every: 1
+early_stop: 10
+init: experiments/MSE_SIN_MRR
+seed: 822
+============================================
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: MRR
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 1
+valid_every: 1
+early_stop: 10
+init: experiments/MSE_SIN_MRR
+seed: 822
+============================================
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: MRR
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 1
+valid_every: 1
+early_stop: 10
+init: experiments/MSE_SIN_MRR
+seed: 822
+============================================
+Loading existing model from experiments/MSE_SIN_MRR
+Total number of parameters: 6302445
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: MRR
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 1
+valid_every: 1
+early_stop: 10
+init: experiments/MSE_SIN_MRR
+seed: 822
+============================================
+Loading existing model from experiments/MSE_SIN_MRR
+Total number of parameters: 6302445
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: MRR
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 1
+valid_every: 1
+early_stop: 10
+init: experiments/MSE_SIN_MR
+seed: 822
+============================================
+Loading existing model from experiments/MSE_SIN_MR
+Total number of parameters: 6302445
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: MRR
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 1
+valid_every: 1
+early_stop: 10
+init: experiments/MSE_SIN_MRR
+seed: 822
+============================================
+Loading existing model from experiments/MSE_SIN_MRR
+Total number of parameters: 6302445
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: MRR
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 0
+valid_every: 1
+early_stop: 10
+init: experiments/WL_SIN_IC
+seed: 822
+============================================
+Loading existing model from experiments/WL_SIN_IC
+Total number of parameters: 6302445
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: MRR
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 0
+valid_every: 1
+early_stop: 10
+init: experiments/WL_SIN_MR
+seed: 822
+============================================
+Loading existing model from experiments/WL_SIN_MR
+Total number of parameters: 6302445
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: MRR
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 0
+valid_every: 1
+early_stop: 10
+init: experiments/WL_SIN_MRR
+seed: 822
+============================================
+Loading existing model from experiments/WL_SIN_MRR
+Total number of parameters: 6302445
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: MRR
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 0
+valid_every: 1
+early_stop: 10
+init: experiments/WL_BERT_MRR
+seed: 822
+============================================
+Loading existing model from experiments/WL_BERT_MRR
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: MRR
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 0
+valid_every: 1
+early_stop: 10
+init: experiments/WL_BERT_MR
+seed: 822
+============================================
+Loading existing model from experiments/WL_BERT_MR
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: MRR
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 0
+valid_every: 1
+early_stop: 10
+init: experiments/WL_BERT_IC
+seed: 822
+============================================
+Loading existing model from experiments/WL_BERT_IC
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: MRR
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 1
+valid_every: 1
+early_stop: 10
+init: experiments/WL_SIN_MRR_new
+seed: 822
+============================================
+Loading existing model from experiments/WL_SIN_MRR_new
+Total number of parameters: 6302445
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: MRR
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 1
+valid_every: 1
+early_stop: 10
+init: experiments/WL_SIN_MR_new
+seed: 822
+============================================
+Loading existing model from experiments/WL_SIN_MR_new
+Total number of parameters: 6302445
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: MRR
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 1
+valid_every: 1
+early_stop: 10
+init: experiments/WL_BERT_MR_new
+seed: 822
+============================================
+Loading existing model from experiments/WL_BERT_MR_new
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: MRR
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 1
+valid_every: 1
+early_stop: 10
+init: experiments/WL_BERT_MRR_new
+seed: 822
+============================================
+Loading existing model from experiments/WL_BERT_MRR_new
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: MRR
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 2
+valid_every: 1
+early_stop: 10
+init: experiments/MSE_BERT_HITS_new
+seed: 822
+============================================
+Loading existing model from experiments/MSE_BERT_HITS_new
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: MRR
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 2
+valid_every: 1
+early_stop: 10
+init: experiments/WL_BERT_HITS_new
+seed: 822
+============================================
+Loading existing model from experiments/WL_BERT_HITS_new
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: MRR
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 2
+valid_every: 1
+early_stop: 10
+init: experiments/WL_SIN_HITS_new
+seed: 822
+============================================
+Loading existing model from experiments/WL_SIN_HITS_new
+Total number of parameters: 6302445
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: MRR
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 1
+valid_every: 1
+early_stop: 10
+init: experiments/test
+seed: 822
+============================================
+Loading existing model from experiments/test
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 1
+valid_every: 1
+early_stop: 10
+init: experiments/test
+seed: 822
+============================================
+Loading existing model from experiments/test
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 1
+valid_every: 1
+early_stop: 10
+init: experiments/test
+seed: 822
+============================================
+Loading existing model from experiments/test
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 1
+valid_every: 1
+early_stop: 10
+init: experiments/test
+seed: 822
+============================================
+Loading existing model from experiments/test
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 0
+valid_every: 1
+early_stop: 10
+init: experiments/test
+seed: 822
+============================================
+Loading existing model from experiments/test
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 0
+valid_every: 1
+early_stop: 10
+init: experiments/test
+seed: 822
+============================================
+Loading existing model from experiments/test
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 0
+valid_every: 1
+early_stop: 10
+init: experiments/test
+seed: 822
+============================================
+Loading existing model from experiments/test
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 0
+valid_every: 1
+early_stop: 10
+init: experiments/test
+seed: 822
+============================================
+Loading existing model from experiments/test
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 0
+valid_every: 1
+early_stop: 10
+init: experiments/test
+seed: 822
+============================================
+Loading existing model from experiments/test
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 0
+valid_every: 1
+early_stop: 10
+init: experiments/test
+seed: 822
+============================================
+Loading existing model from experiments/test
+Total number of parameters: 6295891
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 0
+valid_every: 1
+early_stop: 10
+init: experiments/test
+seed: 822
+============================================
+Loading existing model from experiments/test
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 0
+valid_every: 1
+early_stop: 10
+init: experiments/test
+seed: 822
+============================================
+Loading existing model from experiments/test
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 1
+valid_every: 1
+early_stop: 10
+init: experiments/test
+seed: 822
+============================================
+Loading existing model from experiments/test
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: tr
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 0
+valid_every: 1
+early_stop: 10
+init: experiments/test
+seed: 822
+============================================
+Loading existing model from experiments/test
+Total number of parameters: 10503245
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: tr
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 1
+valid_every: 1
+early_stop: 10
+init: experiments/test
+seed: 822
+============================================
+Loading existing model from experiments/test
+Total number of parameters: 10503245
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: tr
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 1
+valid_every: 1
+early_stop: 10
+init: experiments/test
+seed: 822
+============================================
+Loading existing model from experiments/test
+Total number of parameters: 10503245
+============ Initialized logger ============
+do_pre: True
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: tr
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 2
+valid_every: 1
+early_stop: 10
+init: experiments/test
+seed: 822
+============================================
+Loading existing model from experiments/test
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: tr
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 1
+valid_every: 1
+early_stop: 10
+init: experiments/test
+seed: 822
+============================================
+Loading existing model from experiments/test
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: tr
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 1
+valid_every: 1
+early_stop: 10
+init: experiments/test
+seed: 822
+============================================
+Loading existing model from experiments/test
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: tr
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 1
+valid_every: 1
+early_stop: 10
+init: experiments/wl_exp
+seed: 822
+============================================
+Loading existing model from experiments/wl_exp
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: tr
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 1
+valid_every: 1
+early_stop: 10
+init: experiments/wl_exp
+seed: 822
+============================================
+Loading existing model from experiments/wl_exp
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: tr
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 1
+valid_every: 1
+early_stop: 10
+init: experiments/wl_exp
+seed: 822
+============================================
+Loading existing model from experiments/wl_exp
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: tr
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 1
+valid_every: 1
+early_stop: 10
+init: experiments/w_tr_exp
+seed: 822
+============================================
+Loading existing model from experiments/w_tr_exp
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: tr
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 1
+valid_every: 1
+early_stop: 10
+init: experiments/wl_exp
+seed: 822
+============================================
+Loading existing model from experiments/wl_exp
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: tr
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 1
+valid_every: 1
+early_stop: 10
+init: experiments/test
+seed: 822
+============================================
+Loading existing model from experiments/test
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: tr
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 1
+valid_every: 1
+early_stop: 10
+init: experiments/test
+seed: 822
+============================================
+Loading existing model from experiments/test
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: tr
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 1
+valid_every: 1
+early_stop: 10
+init: experiments/tr_exp
+seed: 822
+============================================
+Loading existing model from experiments/tr_exp
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: tr
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 1
+valid_every: 1
+early_stop: 10
+init: experiments/test
+seed: 822
+============================================
+Loading existing model from experiments/test
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: tr
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 1
+valid_every: 1
+early_stop: 10
+init: experiments/test
+seed: 822
+============================================
+Loading existing model from experiments/test
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: tr
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 1
+valid_every: 1
+early_stop: 10
+init: experiments/test
+seed: 822
+============================================
+Loading existing model from experiments/test
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: tr
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 2
+valid_every: 1
+early_stop: 10
+init: experiments/test
+seed: 822
+============================================
+Loading existing model from experiments/test
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: tr
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 32
+batch_size: 2000
+gpu: 1
+valid_every: 1
+early_stop: 10
+init: experiments/test
+seed: 822
+============================================
+Loading existing model from experiments/test
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0.1
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 0
+valid_every: 1
+early_stop: 10
+init: experiments/grid_search/loss_mse_reg_0.1_neg_500
+seed: 822
+============================================
+Loading existing model from experiments/grid_search/loss_mse_reg_0.1_neg_500
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0.1
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/grid_search/loss_mse_reg_0.1_neg_500
+seed: 822
+============================================
+Loading existing model from experiments/grid_search/loss_mse_reg_0.1_neg_500
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0.1
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/grid_search/loss_mse_reg_0.1_neg_500
+seed: 822
+============================================
+Loading existing model from experiments/grid_search/loss_mse_reg_0.1_neg_500
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0.1
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/grid_search/loss_mse_reg_0.1_neg_500
+seed: 822
+============================================
+Loading existing model from experiments/grid_search/loss_mse_reg_0.1_neg_500
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0.1
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/grid_search/loss_mse_reg_0.1_neg_1000
+seed: 822
+============================================
+Loading existing model from experiments/grid_search/loss_mse_reg_0.1_neg_1000
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0.1
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/grid_search/loss_mse_reg_0.1_neg_2000
+seed: 822
+============================================
+Loading existing model from experiments/grid_search/loss_mse_reg_0.1_neg_2000
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0.1
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/grid_search/loss_mse_reg_0.1_neg_4000
+seed: 822
+============================================
+Loading existing model from experiments/grid_search/loss_mse_reg_0.1_neg_4000
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0.1
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/grid_search/loss_mse_reg_0.2_neg_500
+seed: 822
+============================================
+Loading existing model from experiments/grid_search/loss_mse_reg_0.2_neg_500
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0.1
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/grid_search/loss_mse_reg_0.2_neg_1000
+seed: 822
+============================================
+Loading existing model from experiments/grid_search/loss_mse_reg_0.2_neg_1000
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0.1
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/grid_search/loss_mse_reg_0.2_neg_2000
+seed: 822
+============================================
+Loading existing model from experiments/grid_search/loss_mse_reg_0.2_neg_2000
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0.1
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/grid_search/loss_mse_reg_0.2_neg_4000
+seed: 822
+============================================
+Loading existing model from experiments/grid_search/loss_mse_reg_0.2_neg_4000
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0.1
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/grid_search/loss_mse_reg_0.3_neg_500
+seed: 822
+============================================
+Loading existing model from experiments/grid_search/loss_mse_reg_0.3_neg_500
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0.1
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/grid_search/loss_mse_reg_0.3_neg_1000
+seed: 822
+============================================
+Loading existing model from experiments/grid_search/loss_mse_reg_0.3_neg_1000
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0.1
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/grid_search/loss_mse_reg_0.3_neg_2000
+seed: 822
+============================================
+Loading existing model from experiments/grid_search/loss_mse_reg_0.3_neg_2000
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0.1
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/grid_search/loss_mse_reg_0.3_neg_4000
+seed: 822
+============================================
+Loading existing model from experiments/grid_search/loss_mse_reg_0.3_neg_4000
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0.1
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/grid_search/loss_mse_reg_0.4_neg_500
+seed: 822
+============================================
+Loading existing model from experiments/grid_search/loss_mse_reg_0.4_neg_500
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0.1
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/grid_search/loss_mse_reg_0.4_neg_1000
+seed: 822
+============================================
+Loading existing model from experiments/grid_search/loss_mse_reg_0.4_neg_1000
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0.1
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/grid_search/loss_mse_reg_0.4_neg_2000
+seed: 822
+============================================
+Loading existing model from experiments/grid_search/loss_mse_reg_0.4_neg_2000
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0.1
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/grid_search/loss_mse_reg_0.4_neg_4000
+seed: 822
+============================================
+Loading existing model from experiments/grid_search/loss_mse_reg_0.4_neg_4000
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0.1
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/grid_search/loss_tr_reg_0.1_neg_500
+seed: 822
+============================================
+Loading existing model from experiments/grid_search/loss_tr_reg_0.1_neg_500
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0.1
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/grid_search/loss_tr_reg_0.1_neg_1000
+seed: 822
+============================================
+Loading existing model from experiments/grid_search/loss_tr_reg_0.1_neg_1000
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0.1
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/grid_search/loss_tr_reg_0.1_neg_2000
+seed: 822
+============================================
+Loading existing model from experiments/grid_search/loss_tr_reg_0.1_neg_2000
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0.1
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/grid_search/loss_tr_reg_0.1_neg_4000
+seed: 822
+============================================
+Loading existing model from experiments/grid_search/loss_tr_reg_0.1_neg_4000
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0.1
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/grid_search/loss_tr_reg_0.2_neg_500
+seed: 822
+============================================
+Loading existing model from experiments/grid_search/loss_tr_reg_0.2_neg_500
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0.1
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/grid_search/loss_tr_reg_0.2_neg_1000
+seed: 822
+============================================
+Loading existing model from experiments/grid_search/loss_tr_reg_0.2_neg_1000
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0.1
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/grid_search/loss_tr_reg_0.2_neg_2000
+seed: 822
+============================================
+Loading existing model from experiments/grid_search/loss_tr_reg_0.2_neg_2000
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0.1
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/grid_search/loss_tr_reg_0.2_neg_4000
+seed: 822
+============================================
+Loading existing model from experiments/grid_search/loss_tr_reg_0.2_neg_4000
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0.1
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/grid_search/loss_tr_reg_0.3_neg_500
+seed: 822
+============================================
+Loading existing model from experiments/grid_search/loss_tr_reg_0.3_neg_500
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0.1
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/grid_search/loss_tr_reg_0.3_neg_1000
+seed: 822
+============================================
+Loading existing model from experiments/grid_search/loss_tr_reg_0.3_neg_1000
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0.1
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/grid_search/loss_tr_reg_0.3_neg_2000
+seed: 822
+============================================
+Loading existing model from experiments/grid_search/loss_tr_reg_0.3_neg_2000
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0.1
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/grid_search/loss_tr_reg_0.3_neg_4000
+seed: 822
+============================================
+Loading existing model from experiments/grid_search/loss_tr_reg_0.3_neg_4000
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0.1
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/grid_search/loss_tr_reg_0.4_neg_500
+seed: 822
+============================================
+Loading existing model from experiments/grid_search/loss_tr_reg_0.4_neg_500
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0.1
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/grid_search/loss_tr_reg_0.4_neg_1000
+seed: 822
+============================================
+Loading existing model from experiments/grid_search/loss_tr_reg_0.4_neg_1000
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0.1
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/grid_search/loss_tr_reg_0.4_neg_2000
+seed: 822
+============================================
+Loading existing model from experiments/grid_search/loss_tr_reg_0.4_neg_2000
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0.1
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 4
+valid_every: 1
+early_stop: 10
+init: experiments/grid_search/loss_tr_reg_0.4_neg_4000
+seed: 822
+============================================
+Loading existing model from experiments/grid_search/loss_tr_reg_0.4_neg_4000
+Total number of parameters: 6314245
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 0
+valid_every: 1
+early_stop: 10
+init: experiments/test
+seed: 822
+============================================
+Loading existing model from experiments/test
+Total number of parameters: 8403435
+============ Initialized logger ============
+do_pre: True
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/test
+optimizer: Adam
+loss: mse
+reg: 0
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 0
+valid_every: 1
+early_stop: 10
+init: experiments/test
+seed: 822
+============================================
+Loading existing model from experiments/test
+Total number of parameters: 6314245
