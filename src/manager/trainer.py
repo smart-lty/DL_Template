@@ -11,21 +11,22 @@ import torch.nn as nn
 import torch.optim as optim
 import torch.nn.functional as F
 from torch.utils.data import DataLoader
-from loss import Loss
-from regularizer import Regularizer
+from loss.loss import Loss
+from loss.regularizer import Regularizer
 from util import plot_density
+
+from manager.evaluator import Evaluator
 
 
 class Trainer():
     def __init__(self, args, model, train_dataloader, valid_dataloader=None, test_dataloader=None):
+        
         self.args = args
-        self.model = model
+        self.device = self.args.device
+        self.model = model.to(self.device)
         self.train_dataloader = train_dataloader
         self.valid_dataloader = valid_dataloader
         self.test_dataloader = test_dataloader
-
-        self.device = self.args.device
-        self.updates_counter = 0
 
         model_params = list(self.model.parameters())
         logging.info('Total number of parameters: %d' % sum(map(lambda x: x.numel(), model_params)))
@@ -34,14 +35,14 @@ class Trainer():
             self.optimizer = optim.SGD(filter(lambda p: p.requires_grad, model_params), lr=args.lr, weight_decay=self.args.l2)
         if args.optimizer == "Adam":
             self.optimizer = optim.Adam(filter(lambda p: p.requires_grad, model_params), lr=args.lr, weight_decay=self.args.l2)
-        if args.optimizer == "AdamW":
-            self.optimizer = optim.AdamW(filter(lambda p: p.requires_grad, model_params), lr=args.lr, weight_decay=self.args.l2)
 
         self.criterion = Loss(args)
         self.regularizer = Regularizer(args)
+
+        self.evaluator = Evaluator()
         
-        self.model = self.model.to(self.device)
         self.reset_training_state()
+        self.updates_counter = 0
 
     def reset_training_state(self):
         self.best_metric = -100
@@ -58,20 +59,17 @@ class Trainer():
         tic = time.time()
         with tqdm.tqdm(total=len(dataloader)) as pbar:
             for batch in dataloader:
+                self.optimizer.zero_grad()
+
                 batch_data, batch_label = batch
-                
                 batch_data = batch_data.to(self.device)
                 batch_label = batch_label.to(self.device)
 
-                self.optimizer.zero_grad()
-                score, features = self.model(batch_data)
-                score = score.squeeze(1)
+                score, factors = self.model(batch_data)
 
-                loss1 = self.criterion(score, batch_label, sample_num=self.args.neg_sample_num)
-                loss2 = self.regularizer(features, batch_label, self.args.neg_sample_num)
-
-                loss = (1 - self.args.reg) * loss1 + self.args.reg * loss2
-
+                loss = self.criterion(score, batch_label)
+                reg = self.regularizer(factors, batch_label, self.args.neg_sample_num)
+                loss += reg
                 loss.backward()
 
                 total_loss.append(loss.item())
@@ -79,76 +77,9 @@ class Trainer():
                 self.optimizer.step()
                 pbar.update(1)
 
-                if self.args.do_plot and pbar.n % 100 == 0:
-                    plot_density(score, batch_label, self.args.exp_name, self.epoch, pbar.n)
-
         logging.info(f'Epoch {self.epoch} Loss:{np.mean(total_loss)} in {str(time.time() - tic)} s ')
 
         return np.mean(total_loss)
-    
-    @torch.no_grad()
-    def evaluate(self, dataloader):
-        self.model.eval()
-        rank_IC = []
-        rank_MRR = []
-        rank_MR = []
-        rank_HITS = []
-
-        with tqdm.tqdm(total=len(dataloader)) as pbar:
-            for batch in dataloader:
-                batch_data, batch_label = batch
-                
-                batch_data = batch_data.to(self.device)
-                batch_label = batch_label.to(self.device)
-
-                score, _ = self.model(batch_data)
-                score = score.squeeze(1)
-                
-                rank_IC.append(self.compute_IC(score, batch_label))
-                rank_MRR.append(self.compute_MRR(score, batch_label))
-                rank_MR.append(self.compute_MR(score, batch_label))
-                rank_HITS.append(self.compute_Hits(score, batch_label))
-                pbar.update(1)
-
-        metrics = {"rank_IC": np.mean(rank_IC), "rank_MRR": np.mean(rank_MRR), "rank_MR": 1 / np.mean(rank_MR), "rank_HITS": np.mean(rank_HITS)}
-        return metrics
-
-    def compute_IC(self, pred, ground_truth):
-        pred_rank = pd.Series(pred.cpu().detach().numpy()).rank(ascending=False)
-        gt_rank = pd.Series(ground_truth.cpu().detach().numpy()).rank(ascending=False)
-        ic = pred_rank.corr(gt_rank)
-        return ic
-    
-    def compute_MRR(self, pred, ground_truth):
-        top_size = pred.shape[0] // 3
-        idx = torch.argsort(pred, descending=True)[:top_size]
-        gt_rank = torch.argsort(torch.argsort(ground_truth, descending=True)) + 1
-        pred_rank = gt_rank[idx]
-        mrr = (1 / pred_rank).mean().item()
-        return mrr
-
-    def compute_MR(self, pred, ground_truth):
-        top_size = pred.shape[0] // 3
-        idx = torch.argsort(pred, descending=True)[:top_size]
-        gt_rank = torch.argsort(torch.argsort(ground_truth, descending=True)) + 1
-        pred_rank = gt_rank[idx].float()
-        mr = pred_rank.mean().item()
-        return mr
-    
-    def compute_Hits(self, pred, ground_truth):
-        top_size = pred.shape[0] // 3
-        idx = torch.argsort(pred, descending=True)[:top_size]
-        gt_rank = torch.argsort(torch.argsort(ground_truth, descending=True)) + 1
-        pred_rank = gt_rank[idx].float()
-        precision = (pred_rank <= top_size).float().mean().item()
-
-        idx = torch.argsort(ground_truth)[:top_size]
-        pred_rank = torch.argsort(torch.argsort(ground_truth)) + 1
-        gt_rank = pred_rank[idx].float()
-        recall = (gt_rank <= top_size).float().mean().item()
-
-        # return 2 * recall * precision / (recall + precision)
-        return precision
 
     def train(self):
         self.reset_training_state()
@@ -159,9 +90,10 @@ class Trainer():
             
             if self.valid_dataloader and epoch % self.args.valid_every == 0:
                 tic = time.time()
-                metrics = self.evaluate(self.valid_dataloader)
+                metrics = self.evaluator.evaluate(self.model, self.valid_dataloader, self.device)
                 logging.info(f'Epoch {self.epoch} Valid Performance:{metrics} in {str(time.time() - tic)} s ')
-                res = metrics["rank_"+self.args.metric]
+                
+                res = metrics[self.args.metric]
                 if res >= self.best_metric:
                     self.save_classifier()
                     self.best_metric = res
@@ -181,7 +113,7 @@ class Trainer():
         tic = time.time()
         self.model = torch.load(os.path.join(self.args.exp_name, "best_graph_classifier.pth"))
         self.model = self.model.to(self.device)
-        metrics = self.evaluate(self.test_dataloader)
+        metrics = self.evaluator.evaluate(self.model, self.test_dataloader, self.device)
         logging.info(f'Test Performance:{metrics} in {str(time.time() - tic)} s ')
 
     def save_classifier(self):
@@ -204,6 +136,12 @@ class Trainer():
             all_stocks_name = all_stocks[0].apply(lambda x: str(x).rjust(6, "0")+".npy")
             all_stocks_data = torch.from_numpy(np.stack([np.load(os.path.join(test_data.train_path, day, stock)) for stock in all_stocks_name])).to(self.device)
             stocks_score, _ = self.model(all_stocks_data)
-            stocks_score = stocks_score.squeeze(1).detach().cpu().numpy()
+            stocks_score = stocks_score.detach().cpu()
+            
+            if self.args.loss == "quantile":
+                stocks_score = stocks_score.softmax(dim=1)
+                stocks_score = stocks_score * torch.tensor(self.quantile_weight, device=stocks_score.device)
+                stocks_score = stocks_score.mean(dim=1).numpy()
+
             all_stocks[1] = pd.Series(stocks_score)
             all_stocks.to_csv(f"/data203/tianyu/task1_backtest/{day}", header=False, index=False)

@@ -3,7 +3,6 @@ import torch.nn as nn
 import torch.nn.functional as F
 import ipdb
 import util
-from audtorch.metrics.functional import pearsonr
 
 
 class Loss(nn.Module):
@@ -16,8 +15,7 @@ class Loss(nn.Module):
         self.margin_loss = nn.MarginRankingLoss(margin=args.margin)
         self.quantiles = [0.05, 0.1, 0.2, 0.25, 0.3, 0.5, 0.7, 0.75, 0.9, 0.95]
 
-    
-    def forward(self, pred, ground_truth, sample_num):
+    def forward(self, pred, ground_truth):
         if self.args.loss == "mse":
             return self.mse_loss(pred, ground_truth)
         elif self.args.loss == "wl":
@@ -28,16 +26,13 @@ class Loss(nn.Module):
             return self.logcos_loss(pred, ground_truth)
         elif self.args.loss == "quantile":
             return self.quantile_loss(pred, ground_truth)
-        # return self.sample_ranking_loss(pred, ground_truth, sample_num) + self.mse_loss(pred, ground_truth) + self.corr_pe2_loss(pred, ground_truth)
-        # return self.total_ranking_loss(pred, ground_truth, sample_num)
     
     def quantile_loss(self, pred, ground_truth):
         losses = []
         for i, q in enumerate(self.quantiles):
             errors = ground_truth - pred[:, i]
             losses.append(torch.max((q - 1) * errors, q * errors).unsqueeze(-1))
-        losses = torch.cat(losses, dim=2).mean()
-
+        losses = torch.cat(losses, dim=-1).sum(dim=1).mean()
         return losses
 
     def mse_loss(self, pred, ground_truth):
@@ -77,12 +72,6 @@ class Loss(nn.Module):
         # loss_mat = F.relu(-(score_diff - self.margin) * weight)
         # loss = loss_mat.mean()
         return loss
-
-    def corr_pe2_loss(self, pred, ground_truth):
-        return (1 - pearsonr(pred, ground_truth)) ** 2
-
-    def corr_pe_loss(self, pred, ground_truth):
-        return -pearsonr(pred, ground_truth)
 
     def wranknet_loss(self, pred, ground_truth):
         pred = pred.unsqueeze(1)

@@ -1,13 +1,15 @@
 from data import StockPrice
 from util import parse_args, initial_experiment, set_rand_seed
-from model import Model, PNAModel
-from trainer import Trainer
+from model.mlp import MLP
+from manager.trainer import Trainer
 import ipdb
 import torch
 import os
+import json
 import tqdm
 import logging
 import random
+import argparse
 from torch.utils.data import DataLoader
 
 
@@ -32,11 +34,20 @@ if __name__ == "__main__":
     valid_dataloader = DataLoader(valid_data, batch_size=1, shuffle=False, num_workers=args.num_workers, collate_fn=valid_data.collate_fn)
     test_dataloader = DataLoader(test_data, batch_size=1, shuffle=False, num_workers=args.num_workers, collate_fn=test_data.collate_fn)
     
-    model = Model(args)
+    model = MLP(args)
     
     if args.init:
         model = torch.load(os.path.join(args.init, "best_graph_classifier.pth"))
         logging.info(f"Loading existing model from {args.init}")
+        
+        parser = argparse.ArgumentParser()
+        args_dict = vars(parser)
+        with open(os.path.join(args.init, "params.json")) as f:
+            args_dict.update(json.load(f))
+        parser.do_pre = args.do_pre
+        parser.init = args.init
+        parser.device = args.device
+        args = parser
     
     trainer = Trainer(args, model, train_dataloader, valid_dataloader, test_dataloader)
     if args.do_pre:
