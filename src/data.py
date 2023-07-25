@@ -39,7 +39,6 @@ class StockPrice(Dataset):
         self.label = label_list
 
         pre_path = os.path.dirname(label_path)
-        
         if self.mode == "train":
             if os.path.exists(os.path.join(pre_path, f"{socket.gethostname()}_stock_data.npy")):
                 stock_data = np.load(os.path.join(pre_path, f"{socket.gethostname()}_stock_data.npy")).tolist()

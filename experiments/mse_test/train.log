@@ -119,3 +119,33 @@ Epoch 20 Loss:0.9360316143445442 in 120.17174339294434 s
 Epoch 20 Valid Performance:{'IC': 0.1212348387975446, 'MRR': 0.002170493095763959, 'MR': 0.000601017950603204, 'HITS': 0.3470283244550228} in 23.635681867599487 s 
 ====================================================================================================
 Test Performance:{'IC': 0.09511205741471523, 'MRR': 0.001641911273381542, 'MR': 0.00046922751741819673, 'HITS': 0.34195817015634095} in 37.70899796485901 s 
+============ Initialized logger ============
+do_pre: False
+do_plot: False
+in_channel: 590
+out_channel: 32
+num_layers: 2
+nheads: 5
+dropout: 0.1
+top_k: 500
+pe: bert
+epoch: 20
+metric: HITS
+neg_sample_num: 2000
+exp_name: ./experiments/mse_test
+optimizer: Adam
+loss: mse
+reg: 0
+lr: 0.001
+l2: 0.005
+margin: 1.5
+num_workers: 16
+batch_size: 2000
+gpu: 5
+valid_every: 1
+early_stop: 10
+init: 
+seed: 822
+============================================
+Total number of parameters: 6314245
+Epoch 1 Loss:0.9408179431187281 in 185.73967742919922 s 

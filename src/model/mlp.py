@@ -19,5 +19,5 @@ class MLP(BaseModel, nn.Module):
         x = self.position_encoder(batch)
         x = self.transformer_encoder(x)
         factors = x[:, -1, :]
-        x = self.mlp(x[:, -1, :]).squeeze(1)
+        x = self.mlp(factors).squeeze(1)
         return x, factors

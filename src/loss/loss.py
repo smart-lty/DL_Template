@@ -13,7 +13,7 @@ class Loss(nn.Module):
         self.top_k = args.top_k
         self.margin = args.margin
         self.margin_loss = nn.MarginRankingLoss(margin=args.margin)
-        self.quantiles = [0.05, 0.1, 0.2, 0.25, 0.3, 0.5, 0.7, 0.75, 0.9, 0.95]
+        self.quantiles = [0.05, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
 
     def forward(self, pred, ground_truth):
         if self.args.loss == "mse":

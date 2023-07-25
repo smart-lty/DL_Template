@@ -1,6 +1,7 @@
 from data import StockPrice
 from util import parse_args, initial_experiment, set_rand_seed
 from model.mlp import MLP
+from model.quantile_mlp import QuantileMLP
 from manager.trainer import Trainer
 import ipdb
 import torch
@@ -21,7 +22,7 @@ if __name__ == "__main__":
     args.device = torch.device(f"cuda:{args.gpu}") if args.gpu >= 0 else torch.device("cpu")
 
     idxs = list(range(838))
-    random.shuffle(idxs)
+    # random.shuffle(idxs)
 
     train_index = idxs[:638]
     valid_index = idxs[638:]
@@ -34,7 +35,10 @@ if __name__ == "__main__":
     valid_dataloader = DataLoader(valid_data, batch_size=1, shuffle=False, num_workers=args.num_workers, collate_fn=valid_data.collate_fn)
     test_dataloader = DataLoader(test_data, batch_size=1, shuffle=False, num_workers=args.num_workers, collate_fn=test_data.collate_fn)
     
-    model = MLP(args)
+    if args.loss == "quantile":
+        model = QuantileMLP(args)
+    else:
+        model = MLP(args)
     
     if args.init:
         model = torch.load(os.path.join(args.init, "best_graph_classifier.pth"))

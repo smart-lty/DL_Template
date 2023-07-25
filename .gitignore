@@ -1,6 +1,13 @@
 performance
 
+experiments/
 experiments/*/best_graph_classifier.pth
 experiments/*/*/best_graph_classifier.pth
 
 figures/
+pnl/
+
+src/__pycache__/
+src/loss/__pycache__/
+src/manager/__pycache__/
+src/model/__pycache__/

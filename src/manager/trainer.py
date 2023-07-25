@@ -124,6 +124,10 @@ class Trainer():
     def predict(self, test_data):
         """Predict the next two-day price difference of all stocks for a given day."""
         self.model.eval()
+
+        if not os.path.exists(os.path.join(self.args.init, "backtest_results")):
+            os.mkdir(os.path.join(self.args.init, "backtest_results"))
+
         # generate test results for backtest
         for i in tqdm.trange(len(test_data), desc="generating backtest"):
             day = test_data.data[i]
@@ -138,10 +142,11 @@ class Trainer():
             stocks_score, _ = self.model(all_stocks_data)
             stocks_score = stocks_score.detach().cpu()
             
-            if self.args.loss == "quantile":
+            if len(stock_score.shape) != 1:
                 stocks_score = stocks_score.softmax(dim=1)
                 stocks_score = stocks_score * torch.tensor(self.quantile_weight, device=stocks_score.device)
                 stocks_score = stocks_score.mean(dim=1).numpy()
 
             all_stocks[1] = pd.Series(stocks_score)
-            all_stocks.to_csv(f"/data203/tianyu/task1_backtest/{day}", header=False, index=False)
+            all_stocks.to_csv(os.path.join(self.args.init, "backtest_results", str(day)), header=False, index=False)
+            # all_stocks.to_csv(f"/data203/tianyu/task1_backtest/{day}", header=False, index=False)

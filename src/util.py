@@ -69,7 +69,7 @@ def initial_experiment(args):
         os.mkdir(exp_name)
     args.exp_name = exp_name
     if args.do_pre:
-        file_handler = logging.FileHandler(os.path.join(exp_name, "predict.log"))
+        file_handler = logging.FileHandler(os.path.join(args.init, "predict.log"))
     else:
         file_handler = logging.FileHandler(os.path.join(exp_name, "train.log"))
     logger = logging.getLogger()
