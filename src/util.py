@@ -38,7 +38,7 @@ def parse_args():
     
     # train related
     parser.add_argument("--epoch", type=int, default=20)
-    parser.add_argument("--metric", type=str, default="HITS")
+    parser.add_argument("--metric", type=str, default="ER")
     parser.add_argument("--neg_sample_num", type=int, default=2000)
     parser.add_argument("--exp_name", "-e", type=str, default="test")
     parser.add_argument("--optimizer", type=str, default="Adam")
@@ -51,10 +51,10 @@ def parse_args():
     parser.add_argument("--batch_size", type=int, default=2000)
     parser.add_argument("--gpu", type=int, default=0)
     parser.add_argument("--valid_every", type=int, default=1)
-    parser.add_argument("--early_stop", type=int, default=10)
     parser.add_argument("--init", type=str, default="") 
     parser.add_argument("--seed", type=int, default=822)
     args = parser.parse_args()
+
     return args
 
 def initial_experiment(args):
@@ -69,7 +69,7 @@ def initial_experiment(args):
         os.mkdir(exp_name)
     args.exp_name = exp_name
     if args.do_pre:
-        file_handler = logging.FileHandler(os.path.join(args.init, "predict.log"))
+        file_handler = logging.FileHandler(os.path.join(os.path.dirname(args.init), "predict.log"))
     else:
         file_handler = logging.FileHandler(os.path.join(exp_name, "train.log"))
     logger = logging.getLogger()

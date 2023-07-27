@@ -52,7 +52,7 @@ class Evaluator():
 
         with tqdm.tqdm(total=len(dataloader)) as pbar:
             for batch in dataloader:
-                batch_data, batch_label = batch
+                batch_data, batch_label, _ = batch
                 
                 batch_data = batch_data.to(device)
                 batch_label = batch_label.to(device)
@@ -98,6 +98,13 @@ class Evaluator():
         
         pred_at_top_group = torch.div(pred_at_top_rank, quantile_length, rounding_mode="floor")
         
-        ER = self.table[pred_at_top_group.cpu()].mean()
+        ER_head = self.table[pred_at_top_group.cpu()].mean()
 
-        return {"IC": ic, "MRR": mrr, "MR": mr, "HITS": precision_at_top, "ER": ER}
+        pred_at_tail_rank = gt_rank[torch.argsort(pred)[:top_size]]
+        pred_at_tail_group = torch.div(pred_at_tail_rank, quantile_length, rounding_mode="floor")
+
+        ER_tail = self.table[pred_at_tail_group.cpu()].mean()
+
+        ER = ER_head - ER_tail
+
+        return {"IC": ic, "MRR": mrr, "MR": mr, "HITS": precision_at_top, "ER": ER_head}

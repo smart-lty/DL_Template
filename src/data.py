@@ -72,7 +72,7 @@ class StockPrice(Dataset):
             all_stocks_name = all_stocks[0].apply(lambda x: str(x).rjust(6, "0")+".npy")
             all_stocks_data = np.stack([np.load(os.path.join(self.train_path, day, stock)) for stock in all_stocks_name])
             
-            return torch.from_numpy(all_stocks_data), torch.tensor(all_stocks[1]) # , all_stocks[0].tolist()
+            return torch.from_numpy(all_stocks_data), torch.tensor(all_stocks[1]), all_stocks[0] # , all_stocks[0].tolist()
         
         else:
             # get single stock data of a specific day
@@ -87,10 +87,9 @@ class StockPrice(Dataset):
 
     def collate_fn(self, batch):
         if self.mode != "train":
-            batch_stock_data = torch.cat([x[0] for x in batch])
-            batch_stock_label = torch.cat([x[1] for x in batch])
+            return batch[0]
         else:
             batch_stock_data = torch.stack([x[0] for x in batch])
             batch_stock_label = torch.stack([x[1] for x in batch])
-        return batch_stock_data, batch_stock_label
+            return batch_stock_data, batch_stock_label
             
