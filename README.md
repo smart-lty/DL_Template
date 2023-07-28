@@ -6,6 +6,7 @@ Generally, coding from a template will alliviate your burden and make you more c
 
 Now I am working on improving this projects. Feel free to contact me at tianyu_liu@mail.ustc.edu.cn with any questions.
 
+A blog of this template can be found at my [personal website](https://smart-lty.github.io/tech/dl_template/).
 
 ## Installation and Preparation
 I recommand to create a conda environment for a unique project.
